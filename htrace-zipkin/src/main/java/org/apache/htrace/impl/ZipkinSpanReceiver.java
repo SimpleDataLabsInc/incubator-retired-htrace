@@ -55,7 +55,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 /**
  * Zipkin is an open source tracing library. This span receiver acts as a bridge between HTrace and
  * Zipkin, that converts HTrace Span objects into Zipkin Span objects.
- * <p/>
+ * <p>
  * HTrace spans are queued into a blocking queue.  From there background worker threads will
  * batch the spans together and then send them through to a Zipkin collector.
  */
@@ -115,7 +115,7 @@ public class ZipkinSpanReceiver implements SpanReceiver {
 
   /**
    * The thread factory used to create new ExecutorService.
-   * <p/>
+   * <p>
    * This will be the same factory for the lifetime of this object so that
    * no thread names will ever be duplicated.
    */
@@ -206,7 +206,7 @@ public class ZipkinSpanReceiver implements SpanReceiver {
      * collector as a thrift object. The scribe client which is used for rpc writes a list of
      * LogEntry objects, so the span objects are first transformed into LogEntry objects before
      * sending to the zipkin-collector.
-     * <p/>
+     * <p>
      * Here is a little ascii art which shows the above transformation:
      * <pre>
      *  +------------+   +------------+   +------------+              +-----------------+
@@ -329,7 +329,7 @@ public class ZipkinSpanReceiver implements SpanReceiver {
 
   /**
    * Close the receiver.
-   * <p/>
+   * <p>
    * This tries to shut
    *
    * @throws IOException

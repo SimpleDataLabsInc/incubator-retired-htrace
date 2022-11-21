@@ -29,7 +29,7 @@ import java.util.Map;
 /**
  * Base interface for gathering and reporting statistics about a block of
  * execution.
- * <p/>
+ * <p>
  * Spans form a tree structure with the parent relationship. The first span in a
  * trace has no parent span.
  */

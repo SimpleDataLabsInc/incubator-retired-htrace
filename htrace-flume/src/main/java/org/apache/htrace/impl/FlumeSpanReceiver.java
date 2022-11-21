@@ -76,7 +76,7 @@ public class FlumeSpanReceiver implements SpanReceiver {
 
   /**
    * The thread factory used to create new ExecutorService.
-   * <p/>
+   * <p>
    * This will be the same factory for the lifetime of this object so that
    * no thread names will ever be duplicated.
    */
@@ -248,7 +248,7 @@ public class FlumeSpanReceiver implements SpanReceiver {
 
   /**
    * Close the receiver.
-   * <p/>
+   * <p>
    * This tries to shutdown thread pool.
    *
    * @throws IOException

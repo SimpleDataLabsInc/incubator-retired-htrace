@@ -89,7 +89,7 @@ install)
     which godep &> /dev/null
     if [ $? -ne 0 ]; then
         echo "Installing godep..."
-        go get github.com/tools/godep || die "failed to get godep"
+        go install github.com/tools/godep || die "failed to get godep"
     fi
 
     # Download dependencies into the build directory.

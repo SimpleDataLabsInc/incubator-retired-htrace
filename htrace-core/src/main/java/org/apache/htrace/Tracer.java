@@ -44,7 +44,7 @@ public class Tracer {
 
   /**
    * Internal class for defered singleton idiom.
-   * <p/>
+   * <p>
    * https://en.wikipedia.org/wiki/Initialization_on_demand_holder_idiom
    */
   private static class TracerHolder {

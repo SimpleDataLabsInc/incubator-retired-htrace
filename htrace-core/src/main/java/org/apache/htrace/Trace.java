@@ -100,7 +100,6 @@ public class Trace {
    * Set the processId to be used for all Spans created by this Tracer.
    *
    * @param processId
-   * @see Span.java
    */
   public static void setProcessId(String processId) {
     Tracer.processId = processId;
